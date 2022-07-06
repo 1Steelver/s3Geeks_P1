@@ -6,12 +6,11 @@ export const Navbar = () => {
   const { store, actions } = useContext(Context);
   console.log(store);
   return (
-    
     <nav className="navbar navbar-light navbar-expand-sm bg-light">
-           <Link to="/">
+      <Link to="/">
         <span className="navbar-brand mb-0 h1">s3G</span>
       </Link>
-      <div className="row w-100" >
+      <div className="row w-100">
         <div className="col-10"></div>
         <div className="dropdown col-2 ">
           <button
@@ -21,7 +20,7 @@ export const Navbar = () => {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            carrito<span class="badge badge-light">4</span>
+            carrito<span className="badge badge-light">4</span>
           </button>
           <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             {store.favoritos.map((element, index) => {
@@ -41,6 +40,8 @@ export const Navbar = () => {
           </ul>
         </div>
       </div>
+  
+ 
     </nav>
   );
 };

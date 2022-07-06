@@ -50,7 +50,7 @@ export const Cards = (props) => {
               to={"/people/" + props.uid}
               className="btn btn-outline-primary m-2"
             >
-              Learn More
+              ver producto
             </Link>
             <button type="button" className="btn btn-outline-warning" onClick={()=>{actions.addFav(props.properties.name)}}>
               {props.isFavorite ? (
