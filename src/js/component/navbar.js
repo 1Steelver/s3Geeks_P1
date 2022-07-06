@@ -6,7 +6,7 @@ export const Navbar = () => {
   const { store, actions } = useContext(Context);
   console.log(store);
   return (
-    <nav className="navbar navbar-light navbar-expand-sm bg-light">
+    <nav className="navbar navbar-dark navbar-expand-sm bg-dark">
       <Link to="/">
         <span className="navbar-brand mb-0 h1">s3G</span>
       </Link>
@@ -39,6 +39,7 @@ export const Navbar = () => {
             })}
           </ul>
         </div>
+        
       </div>
   
  
