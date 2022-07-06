@@ -9,7 +9,7 @@ export const Navbar = () => {
     
     <nav className="navbar navbar-light navbar-expand-sm bg-light">
            <Link to="/">
-        <span className="navbar-brand mb-0 h1">starwars</span>
+        <span className="navbar-brand mb-0 h1">s3G</span>
       </Link>
       <div className="row w-100" >
         <div className="col-10"></div>
@@ -21,7 +21,7 @@ export const Navbar = () => {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Favorites
+            carrito<span class="badge badge-light">4</span>
           </button>
           <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             {store.favoritos.map((element, index) => {
